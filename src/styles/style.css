@@ -1,7 +1,267 @@
-/** CSS STYLE **/
 
-.hello {
+:root {
+  --color-white: #fff;
+  --color-white-transparent: #d7ccc0;
+  --color-light: #f5f4f0;
+  --color-main: #fe8a02;
+  --color-main-dark: #42413c;
+  --color-dark: #2a2626;
+  --color-dark-transparent: #908d8b;
+  --color-brown: #b09a81;
+  --color-blue: #1085c5;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.6em;
+  color: #2A2626;  
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  padding: 0;
+  font-family: 'Neucha', cursive;
+  color: var(--color-main);
+  line-height: 1.2em;
+  font-weight: 400;
+  z-index: 2;
+}
+
+h1 {
+  font-size: 72px;
+}
+
+h2 {
+
+  font-size: 60px;
+}
+
+h3 {
+
+  font-size: 34px;
+}
+
+h4 {
+  font-family: 'Open Sans';
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  margin: 5px 10px;
+}
+
+.bg-light {
+  background-color: var(--color-light);
+}
+
+.bg-brown {
+  background-color: var(--color-brown);
+}
+
+.bg-white {
+  background-color: var(--color-white);
+}
+
+.container {
+  max-width: 1110px;
+  padding: 100px 0;
+  margin: 0 auto;
+}
+
+.header-container {
+  position: relative;
+  max-width: 1110px;
+  min-height: 720px;
+  margin: 0 auto;
+  padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+ 
+}
+
+.heading-section {
+  display: flex;
+  flex-direction: row;
+  padding-top: 5px;
+}
+
+.bg-image {
+  position: relative;
+}
+
+.bg-image::before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.1;
+  content: "";
+}
+
+.header__image {
+  position: absolute;
+  height: 525px;
+  top: 55px;
+  right: -270px;
+}
+
+.primary-dark {
+  color: var(--color-dark);
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gap-2 {
+  gap: 30px;
+}
+
+.row p {
+  white-space: wrap;
+  word-break: normal;
+}
+
+.column {
+  flex-basis: 50%;
+}
+
+.button {
   display: block;
+  display: inline-block;
+  padding: 12px 24px;
+  font-weight: 700;
+  background-color: var(--color-main);
+  color: var(--color-white);
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-top: 1.5rem;
+  
+}
 
-  color: #fff;
+.center {
+  align-items: center;
+  text-align: center;
+  justify-content: start;
+  height: 0;
+}
+
+.video {
+  display: block;
+  filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: -100px;
+  z-index: 2;
+}
+
+#navigation {
+  background-color: var(--color-main-dark);
+  padding: 200px 0 100px 0;
+  margin-top: -100px;
+}
+
+.nav-container {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.card-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+.card-item {
+  background-color: var(--color-light);
+  display: block;
+  width: 27%;
+  flex-direction: column;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.card-item:hover {
+  background-color: var(--color-main);
+  cursor: pointer;
+}
+
+.card-item:hover h3 {
+  color: var(--color-white)
+}
+
+.number {
+  padding: 0 0 40px 0;
+  margin: 0;
+  font-size: 64px;
+  font-family: 'Neucha', coursive;
+  line-height: 1;
+}
+
+.card-item.title {
+  background-color: var(--color-main-dark);
+  padding: 0;
+  min-width: 350px;
+}
+
+.title-text {
+  font-size: 52px;
+}
+
+.white {
+  color: var(--color-white);
+}
+
+
+
+.image {
+  position: relative;
+  z-index: 2;
+  filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
+  vertical-align: middle;
+  
+}
+
+.upper-heading {
+  font-family: 'Neucha', coursive;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+  margin: 0;
+}
+
+.under-heading {
+  font-family: 'Neucha', coursive;
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 40px;
+
+}
+
+.secondary-dark {
+  color: var(--color-dark-transparent)
+}
+
+.primary-light {
+  color: var(--color-white)
+}
+
+.primary-brown {
+  color: var(--color-brown)
+}
+
+.secondary-light {
+  color: var(--color-white-transparent)
+}
+
+.marginality {
+  margin: 100px 0 20px 0;
 }
