@@ -1,3 +1,4 @@
+
 :root {
   --color-white: #fff;
   --color-white-transparent: #d7ccc0;
@@ -24,7 +25,7 @@ h2,
 h3 {
   margin: 0;
   padding: 0;
-  font-family: "Neucha", cursive;
+  font-family: Neucha, cursive;
   color: var(--color-main);
   line-height: 1.2em;
   font-weight: 400;
@@ -44,7 +45,7 @@ h3 {
 }
 
 h4 {
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: 17px;
@@ -99,14 +100,14 @@ h4 {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url(../img/background.png);
+  background-image: url("../img/background.png");
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.1;
   content: "";
 }
 
-.header__image {
+.header-image {
   position: absolute;
   height: 525px;
   top: 55px;
@@ -165,7 +166,7 @@ h4 {
 
 #navigation {
   background-color: var(--color-main-dark);
-  padding: 200px 0 100px 0;
+  padding: 200px 0 100px;
   margin-top: -110px;
 }
 
@@ -201,10 +202,10 @@ h4 {
 }
 
 .number {
-  padding: 0 0 40px 0;
+  padding: 0 0 40px;
   margin: 0;
   font-size: 64px;
-  font-family: "Neucha", coursive;
+  font-family: Neucha, cursive;
   line-height: 1;
 }
 
@@ -230,7 +231,7 @@ h4 {
 }
 
 .upper-heading {
-  font-family: "Neucha", coursive;
+  font-family: Neucha, cursive;
   font-size: 24px;
   font-weight: 400;
   line-height: 30px;
@@ -238,7 +239,7 @@ h4 {
 }
 
 .under-heading {
-  font-family: "Neucha", coursive;
+  font-family: Neucha, cursive;
   font-size: 34px;
   font-weight: 400;
   line-height: 40px;
@@ -261,25 +262,24 @@ h4 {
 }
 
 .marginality {
-  margin: 100px 0 20px 0;
+  margin: 100px 0 20px;
 }
 
 .email {
-  font-family: Open Sans;
+  font-family: "Open Sans", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 29px;
-  letter-spacing: 0em;
+
   text-align: left;
   color: var(--color-white);
 }
 
 .agreement {
-  font-family: Open Sans;
+  font-family: "Open Sans", sans-serif;
   font-size: 12px;
   font-weight: 400;
   line-height: 19px;
-  letter-spacing: 0em;
   text-align: left;
   color: var(--color-white);
 }
@@ -305,10 +305,9 @@ h4 {
 }
 
 .placeholder {
-  font-family: Open Sans;
+  font-family: "Open Sans", sans-serif;
   font-size: 13px;
   font-weight: 400;
-  letter-spacing: 0em;
   text-align: left;
   color: #757575;
   opacity: 0.2;
@@ -330,7 +329,7 @@ h4 {
   position: absolute;
   width: 24px;
   height: 24px;
-  background-image: url(../img/send.svg);
+  background-image: url("../img/send.svg");
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 1;
@@ -338,11 +337,10 @@ h4 {
 }
 
 .contact-info-text {
-  font-family: Open Sans;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 22px;
-  letter-spacing: 0em;
   text-align: center;
   color: var(--color-main-dark);
 }
@@ -373,11 +371,10 @@ h4 {
 }
 
 .card-item-props {
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 26px;
-  letter-spacing: 0em;
   text-align: left;
   color: var(--color-main-dark);
   margin-bottom: 0;
